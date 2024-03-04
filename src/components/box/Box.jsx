@@ -7,19 +7,19 @@ import { StyledBox } from './box.styles';
 */
 
 const Box = () => {
-	const [isOrange, setIsOrange] = useState(true);
+	const [isOrange, isNotOrange] = useState(true);
 	return (
 		<>
 			<StyledBox $isOrange={isOrange} />
-			<button onClick={() => changeColor(isOrange, setIsOrange)}>
+			<button onClick={() => changeColor(isOrange, isNotOrange)}>
 				CHANGE COLOR
 			</button>
 		</>
 	);
 };
-
-const changeColor = (isOrange, setIsOrange) => {
-	setIsOrange(!isOrange);
+// Aquí se crea la función del cambio o de lo que quieres que ocurra
+const changeColor = (isOrange, isNotOrange) => {
+	isNotOrange(!isOrange);
 };
 
 export default Box;

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const Range = () => {
-	const [rangeValue, setRangeValue] = useState(5);
+	const [rangeValue, setRangeValue] = useState(2);
 	return (
 		<>
 			<h1>{rangeValue}</h1>
