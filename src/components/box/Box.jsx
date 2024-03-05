@@ -17,7 +17,10 @@ const Box = () => {
 		</>
 	);
 };
+
+
 // Aquí se crea la función del cambio o de lo que quieres que ocurra
+
 const changeColor = (isOrange, isNotOrange) => {
 	isNotOrange(!isOrange);
 };
